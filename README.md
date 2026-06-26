@@ -83,9 +83,19 @@ http://127.0.0.1:5000
 
 ---
 
-## 📸 Demo
+## 📸 Screenshots
 
-Add screenshots or a GIF here.
+### Home Page
+
+![Home Page](screenshots/home.png)
+
+### Generating Image
+
+![Generating](screenshots/generating.png)
+
+### Generated Image
+
+![Result](screenshots/result.png)
 
 ---
 
