@@ -1,16 +1,16 @@
-# 🖼️ AI Image Generator
+# 🖼️ AI Image Generator (Flask + Stable Diffusion)
 
-A Flask-based web application that generates AI images from text prompts using the Hugging Face Inference API and Stable Diffusion 3 Medium.
+A simple yet powerful web app that generates AI images from text prompts using Hugging Face Stable Diffusion 3 via Flask.
 
 ---
 
 ## ✨ Features
 
 * 🎨 Generate images from text prompts
-* 🤖 Powered by Stable Diffusion 3 Medium
-* ⚡ Fast and simple Flask backend
-* 🔒 Secure API key management using `.env`
-* 🌐 Clean web interface
+* ⚡ Fast Flask backend
+* 🤖 Powered by Stable Diffusion 3 (Hugging Face API)
+* 💾 Base64 image rendering (no file storage needed)
+* 🌐 Simple and responsive UI
 
 ---
 
@@ -18,9 +18,8 @@ A Flask-based web application that generates AI images from text prompts using t
 
 * Python
 * Flask
-* HTML/CSS
+* HTML, CSS, JavaScript
 * Hugging Face Inference API
-* Stable Diffusion 3 Medium
 * Requests
 * python-dotenv
 
@@ -32,18 +31,21 @@ A Flask-based web application that generates AI images from text prompts using t
 ImageGenerator/
 │── templates/
 │   └── index.html
+│── screenshots/
+│   ├── home.png
+│   ├── generating.png
+│   └── result.png
 │── app.py
 │── requirements.txt
 │── .gitignore
 │── README.md
-└── .env (not included)
 ```
 
 ---
 
-## 🚀 Installation
+## ⚙️ Setup Instructions
 
-### 1. Clone the repository
+### 1. Clone the repo
 
 ```bash
 git clone https://github.com/PalakD42/ImageGenerator.git
@@ -56,30 +58,25 @@ cd ImageGenerator
 pip install -r requirements.txt
 ```
 
-### 3. Create a `.env` file
+### 3. Add environment variables
+
+Create a `.env` file:
 
 ```env
 HF_API_KEY=your_huggingface_api_key
 ```
 
-### 4. Run the application
+### 4. Run the app
 
 ```bash
 python app.py
 ```
 
-Open your browser and visit:
+Open:
 
 ```
 http://127.0.0.1:5000
 ```
-
----
-
-## 🧠 Model Used
-
-* Stable Diffusion 3 Medium
-* Accessed through the Hugging Face Inference API
 
 ---
 
@@ -93,20 +90,35 @@ http://127.0.0.1:5000
 
 ![Generating](screenshots/generating.png)
 
-### Generated Image
+### Result
 
 ![Result](screenshots/result.png)
 
 ---
 
+## 🚨 Common Issues
+
+### Screenshots not showing?
+
+* Ensure images are inside `screenshots/` folder
+* Check exact spelling & case (GitHub is case-sensitive)
+* Make sure files are pushed:
+
+```bash
+git add screenshots/
+git commit -m "Add screenshots"
+git push
+```
+
+---
+
 ## 🔮 Future Improvements
 
-* Download generated images
-* Image history
-* Multiple image generation
-* Prompt enhancement
-* Dark mode
-* User authentication
+* Download button for images
+* Image history gallery
+* Prompt suggestions
+* Dark mode UI
+* User login system
 
 ---
 
@@ -115,3 +127,4 @@ http://127.0.0.1:5000
 **Palak**
 
 GitHub: https://github.com/PalakD42
+
